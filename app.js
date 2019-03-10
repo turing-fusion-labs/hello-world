@@ -17,5 +17,10 @@ console.log('Hellow World Test Program started on: ' + 7000);  // This is exampl
 
 
 app.get('/', function(req, res) {
-  res.render('index');
+    res.render('index');
+});
+
+app.post('/save', function(req, res) {
+    var firstName = req.body.fname;
+    res.render('nextpage', {fname:firstName});
 });
