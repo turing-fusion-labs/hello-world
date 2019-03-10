@@ -1,21 +1,21 @@
 {
   "name": "Turing_Fusion_Labs",
   "version": "1.0.0",
-  "description": "Restful Services for Turing Fusion Labs",
+  "description": "Hello World Test Program",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
-  "keywords": [
-    "REST",
-    "API"
-  ],
-  "author": "Prad",
+  "author": "TFL",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
