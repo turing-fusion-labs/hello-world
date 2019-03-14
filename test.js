@@ -1,10 +1,15 @@
-function add(number1, number2) {
- var number3 = number1 + number2;
- return number3;
+function areaOfRectangle(side1, side2) {
+ var area = side1 * side2;
+ return area;
 }
 
 var a = 5;
 var b = 7;
-var sum = add(a,b);
+var c = 4;
 
-console.log ("total: " + sum);
+var area1 = areaOfRectangle(a,b);
+var area2 = areaOfRectangle(b,c);
+
+
+console.log ( area1 );
+console.log ( area2 );

@@ -13,14 +13,19 @@ app.listen(7000);
 
 console.log('Hellow World Test Program started on: ' + 7000);  // This is example of logging message in the console (black screen)
 
+app.get('/', function(request, response) {
+    response.render('index');
+});
+
+function calculateAge(yearOfBirth){
+    var age = 2019-yearOfBirth;
+    return age;
+}
+
 // ---------- do not change above unless you know what you are doing :) -----------
 
 
-app.get('/', function(req, res) {
-    res.render('index');
-});
-
-app.post('/save', function(req, res) {
-    var firstName = req.body.fname;
-    res.render('nextpage', {fname:firstName});
+app.post('/save', function(request, response) {
+    var firstName = request.body.firstname;
+    response.render('nextpage', { fname:firstName });
 });
